@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>CRUD PHP dan MySQLi</title>
 </head>
-
 <body>
     <h2>CRUD DATA MAHASISWA</h2>
     <br />
@@ -16,7 +14,7 @@
     include 'koneksi.php';
     $nim = $_GET['nim'];
     $data = mysqli_query($koneksi, "select * from mahasiswa
-where nim='$nim'");
+    where nim='$nim'");
     while ($d = mysqli_fetch_array($data)) {
     ?>
         <form method="post" action="update.php">
