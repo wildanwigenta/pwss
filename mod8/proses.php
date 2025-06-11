@@ -8,8 +8,8 @@
     $hp      = $_POST['hp'];
     $kodeProdi = $_POST['kodeProdi'];
 
-    mysqli_query($koneksi, "INSERT INTO mahasiswa (nim, nama, alamat, hp, kodeProdi) 
-                            VALUES ('$nim', '$nama', '$alamat', '$hp', '$kodeProdi')");
+    mysqli_query($koneksi, "INSERT INTO mahasiswa (nim, nama, alamat, email, hp, kodeProdi) 
+                            VALUES ('$nim', '$nama', '$alamat', '$email', '$hp', '$kodeProdi')");
 
     header("location:index.php"); 
 ?>
