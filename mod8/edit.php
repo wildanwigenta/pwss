@@ -31,6 +31,9 @@
                     <td><input type="text" name="email" value="<?php echo $d['email']; ?>"></td>
                 </tr>
                 <tr>
+                    <td>Alamat</td>
+                    <td><input type="text" name="alamat" value="<?php echo $d['alamat']; ?>"></td>
+                <tr>
                     <td>No. Hp</td>
                     <td><input type="text" name="hp" value="<?php echo $d['hp']; ?>"></td>
                 </tr>
