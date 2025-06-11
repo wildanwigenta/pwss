@@ -16,6 +16,7 @@
             <th>EMAIL</th>
             <th>ALAMAT</th>
             <th>NOMOR HP</th>
+            <th>PRODI</th>
             <th>OPSI</th>
         </tr>
         <?php
@@ -29,6 +30,12 @@
                 <td><?php echo $d['email']; ?></td>
                 <td><?php echo $d['alamat']; ?></td>
                 <td><?php echo $d['hp']; ?></td>
+                <td>
+                    <?php
+                    $prodi = mysqli_query($koneksi, "SELECT namaProdi FROM prodi WHERE kodeProdi='" . $d['kodeProdi'] . "'");
+                    $p = mysqli_fetch_assoc($prodi);
+                    echo $p['namaProdi'];
+                    ?>
                 <td>
                     <a href="edit.php?nim=<?php echo $d['nim']; ?>">EDIT</a>
                     <a href="delete.php?nim=<?php echo $d['nim']; ?>">HAPUS</a>
