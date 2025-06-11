@@ -14,12 +14,7 @@
     <h3>TAMBAH DATA MAHASISWA</h3>
 
     <?php
-    $koneksi = mysqli_connect("localhost", "root", "", "akademik");
- 
-    if (mysqli_connect_errno()) {
-        echo "Koneksi database gagal: " . mysqli_connect_error();
-        exit;
-    }
+    include 'koneksi.php';
     $query = "SELECT kodeProdi, namaProdi FROM prodi";
     $result = mysqli_query($koneksi, $query);
     ?>
@@ -38,6 +33,9 @@
                 <td>Alamat :</td>
                 <td><input type="text" name="alamat"></td>
             </tr>
+            <tr>
+                <td>Email :</td>
+                <td><input type="email" name="email"></td>
             <tr>
                 <td>No. HP :</td>
                 <td><input type="text" name="hp"></td>

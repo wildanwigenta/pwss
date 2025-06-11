@@ -14,6 +14,7 @@
             <th>NIM</th>
             <th>NAMA</th>
             <th>EMAIL</th>
+            <th>ALAMAT</th>
             <th>NOMOR HP</th>
             <th>OPSI</th>
         </tr>
@@ -26,6 +27,7 @@
                 <td><?php echo $d['nim']; ?></td>
                 <td><?php echo $d['nama']; ?></td>
                 <td><?php echo $d['email']; ?></td>
+                <td><?php echo $d['alamat']; ?></td>
                 <td><?php echo $d['hp']; ?></td>
                 <td>
                     <a href="edit.php?nim=<?php echo $d['nim']; ?>">EDIT</a>
