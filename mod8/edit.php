@@ -19,7 +19,7 @@
     ?>
         <form method="post" action="update.php">
             <table>
-                <tr>
+                <tr>0
                     <td>Nama</td>
                     <td>
                         <input type="hidden" name="nim" value="<?php echo $d['nim']; ?>">
