@@ -18,6 +18,6 @@ exit();
 }
 else {
 echo "<label>Gak Ketemu </label>";
-echo "<a href='index1.php'>Kembali</a>";
+echo "<a href='index.php'>Kembali</a>";
 }
 ?>
