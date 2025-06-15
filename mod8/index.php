@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>CRUD PHP dan MySQLi</title>
 </head>
+
 <body>
     <h2>CRUD DATA MAHASISWA</h2>
     <br />
@@ -46,4 +48,5 @@
         ?>
     </table>
 </body>
+
 </html>
