@@ -1,6 +1,6 @@
 <?php
-include_once 'Database.php';
-include_once 'Pegawai.php';
+include_once 'database.php';
+include_once 'pegawai.php';
 $database = new Database();
 $db = $database->getConnection();
 $pegawai = new Pegawai($db);
