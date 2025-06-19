@@ -16,3 +16,4 @@ window.location.href='index.php';</script>";
 } else {
     die('ERROR: ID tidak ditemukan.');
 }
+?>
