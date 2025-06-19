@@ -84,11 +84,8 @@ $num = $stmt->rowCount();
                 echo "<td>{$nama}</td>";
                 echo "<td>{$alamat}</td>";
                 echo "<td>";
-                echo "<a href='edit.php?id=" . $id_pegawai . "'
-class='btn btn-edit'>Edit</a> ";
-                echo "<a href='hapus.php?id=" . $id_pegawai .
-                    "' class='btn btn-delete' onclick='return confirm(\"Apakah Anda yakin ingin
-menghapus data ini?\")'>Hapus</a>";
+                echo "<a href='edit.php?id=" . $id_pegawai ."'class='btn btn-edit'>Edit</a> ";
+                echo "<a href='hapus.php?id=" . $id_pegawai ."' class='btn btn-delete' onclick='return confirm(\"Apakah Anda yakin ingin menghapus data ini?\")'>Hapus</a>";
                 echo "</td>";
                 echo "</tr>";
             }
