@@ -2,7 +2,7 @@
 class Database
 {
     private $host = "localhost"; //Sesuaikan jika host database Anda berbeda
-    private $db_name = "simpeg"; //sesuaikan bila nama database berbeda
+    private $db_name = "pwssdb"; //sesuaikan bila nama database berbeda
     private $username = "root"; // Sesuaikan bila username berbeda
     private $password = ""; // Sesuaikan bila password berbrda
     public $conn;
