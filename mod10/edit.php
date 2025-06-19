@@ -1,6 +1,6 @@
 <?php
-include_once 'Database.php';
-include_once 'Pegawai.php';
+include_once 'database.php';
+include_once 'pegawai.php';
 $database = new Database();
 $db = $database->getConnection();
 $pegawai = new Pegawai($db);
@@ -77,14 +77,11 @@ window.location.href='index.php';</script>";
 <body>
     <div class="container">
         <h1>Edit Data Pegawai</h1>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"] .
-                            "?id=" . $id); ?>" method="post">
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"] . "?id=" . $id); ?>" method="post">
             <label for="nama">Nama:</label>
-            <input type="text" id="nama" name="nama" value="<?php echo
-                                                            htmlspecialchars($pegawai->nama); ?>" required>
+            <input type="text" id="nama" name="nama" value="<?php echo htmlspecialchars($pegawai->nama); ?>" required>
             <label for="alamat">Alamat:</label>
-            <textarea id="alamat" name="alamat" required><?php echo
-                                                            htmlspecialchars($pegawai->alamat); ?></textarea>
+            <textarea id="alamat" name="alamat" required><?php echo htmlspecialchars($pegawai->alamat); ?></textarea>
             <input type="submit" value="Update">
         </form>
         <a href="index.php" class="btn-back">Kembali</a>
