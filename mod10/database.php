@@ -1,10 +1,10 @@
 <?php
 class Database
 {
-    private $host = "localhost"; //Sesuaikan jika host database Anda berbeda
-    private $db_name = "pwssdb"; //sesuaikan bila nama database berbeda
-    private $username = "root"; // Sesuaikan bila username berbeda
-    private $password = ""; // Sesuaikan bila password berbrda
+    private $host = "localhost"; 
+    private $db_name = "pwssdb"; 
+    private $username = "root"; 
+    private $password = ""; 
     public $conn;
     public function getConnection()
     {
