@@ -1,6 +1,6 @@
 <?php
-include_once 'Database.php'; //cara lain selain include
-include_once 'Pegawai.php';
+include_once 'database.php'; //cara lain selain include
+include_once 'pegawai.php';
 // Inisialisasi database dan objek Pegawai
 $database = new Database();
 $db = $database->getConnection();
