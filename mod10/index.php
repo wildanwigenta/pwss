@@ -60,7 +60,6 @@ $num = $stmt->rowCount();
         }
     </style>
 </head>
-
 <body>
     <div class="container">
         <h1>Data Pegawai</h1>
