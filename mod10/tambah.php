@@ -18,7 +18,6 @@ window.location.href='index.php';</script>";
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -70,7 +69,6 @@ window.location.href='index.php';</script>";
         }
     </style>
 </head>
-
 <body>
     <div class="container">
         <h1>Tambah Pegawai Baru</h1>
@@ -87,5 +85,4 @@ window.location.href='index.php';</script>";
         <a href="index.php" class="btn-back">Kembali</a>
     </div>
 </body>
-
 </html>
