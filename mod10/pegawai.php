@@ -39,26 +39,29 @@ class Pegawai
     // Method untuk membaca satu data pegawai berdasarkan ID
     public function readOne()
     {
-        $query = "SELECT nama, alamat FROM " . $this->table_name . " WHERE id_pegawai = ? LIMIT 0,1";
+        $query = "SELECT nama, alamat, email FROM " . $this->table_name . " WHERE id_pegawai = ? LIMIT 0,1";
         $stmt = $this->conn->prepare($query);
         $stmt->bindParam(1, $this->id_pegawai);
         $stmt->execute();
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
         $this->nama = $row['nama'];
         $this->alamat = $row['alamat'];
+        $this->email = $row['email']; 
     }
     // Method untuk mengupdate data pegawai
     public function update()
     {
-        $query = "UPDATE " . $this->table_name . " SET nama = :nama, alamat = :alamat WHERE id_pegawai = :id_pegawai";
+        $query = "UPDATE " . $this->table_name . " SET nama = :nama, alamat = :alamat, email = :email WHERE id_pegawai = :id_pegawai";
         $stmt = $this->conn->prepare($query);
         // Sanitize data
         $this->nama = htmlspecialchars(strip_tags($this->nama));
         $this->alamat = htmlspecialchars(strip_tags($this->alamat));
+        $this->email = htmlspecialchars(strip_tags($this->email));
         $this->id_pegawai = htmlspecialchars(strip_tags($this->id_pegawai));
         // Bind values
         $stmt->bindParam(':nama', $this->nama);
         $stmt->bindParam(':alamat', $this->alamat);
+        $stmt->bindParam(':email', $this->email);
         $stmt->bindParam(':id_pegawai', $this->id_pegawai);
         if ($stmt->execute()) {
             return true;
