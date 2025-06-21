@@ -30,6 +30,7 @@ class Pegawai
         // Bind values
         $stmt->bindParam(":nama", $this->nama);
         $stmt->bindParam(":alamat", $this->alamat);
+        $stmt->bindParam(":email", $this->email);
         if ($stmt->execute()) {
             return true;
         }
