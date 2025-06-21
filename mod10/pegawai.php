@@ -6,6 +6,7 @@ class Pegawai
     public $id_pegawai;
     public $nama;
     public $alamat;
+    public $email;
     public function __construct($db)
     {
         $this->conn = $db;
@@ -13,7 +14,7 @@ class Pegawai
     // Method untuk membaca semua data pegawai
     public function read()
     {
-        $query = "SELECT id_pegawai, nama, alamat FROM " . $this->table_name . " ORDER BY id_pegawai DESC";
+        $query = "SELECT id_pegawai, nama, alamat, email FROM " . $this->table_name . " ORDER BY id_pegawai DESC";
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
         return $stmt;
@@ -21,7 +22,7 @@ class Pegawai
     // Method untuk membuat data pegawai baru
     public function create()
     {
-        $query = "INSERT INTO " . $this->table_name . " SET nama=:nama,alamat=:alamat";
+        $query = "INSERT INTO " . $this->table_name . " SET nama=:nama,alamat=:alamat, email=:email";
         $stmt = $this->conn->prepare($query);
         // Sanitize data
         $this->nama = htmlspecialchars(strip_tags($this->nama));
