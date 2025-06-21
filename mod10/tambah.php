@@ -75,7 +75,7 @@ window.location.href='index.php';</script>";
     <div class="container">
         <h1>Tambah Pegawai Baru</h1>
         <form action="<?php echo
-                        htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+            htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <label for="nama">Nama:</label>
             <input type="text" id="nama" name="nama" required>
             <label for="alamat">Alamat:</label>
