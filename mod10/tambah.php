@@ -7,6 +7,7 @@ $pegawai = new Pegawai($db);
 if ($_POST) {
     $pegawai->nama = $_POST['nama'];
     $pegawai->alamat = $_POST['alamat'];
+    $pegawai->email = $_POST['email']; 
     if ($pegawai->create()) {
         echo "<script>alert('Data pegawai berhasil ditambahkan!');
 window.location.href='index.php';</script>";
@@ -79,6 +80,8 @@ window.location.href='index.php';</script>";
             <input type="text" id="nama" name="nama" required>
             <label for="alamat">Alamat:</label>
             <textarea id="alamat" name="alamat" required></textarea>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
             <input type="submit" value="Simpan">
         </form>
         <a href="index.php" class="btn-back">Kembali</a>
