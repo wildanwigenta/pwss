@@ -72,7 +72,7 @@ $num = $stmt->rowCount();
             echo "</thead>";
             echo "<tbody>";
             while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-                extract($row); // Mengambil variabel dari array $row (misal $id_pegawai, $nama, $alamat, $email)
+                extract($row); 
                 echo "<tr>";
                 echo "<td>{$id_pegawai}</td>";
                 echo "<td>{$nama}</td>";
