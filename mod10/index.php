@@ -21,13 +21,11 @@ $num = $stmt->rowCount();
             border-collapse: collapse;
             margin-top: 20px;
         }
-
         table,
         th,
         td {
             border: 1px solid black;
         }
-
         th,
         td {
             padding: 8px;
