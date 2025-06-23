@@ -31,7 +31,6 @@ $num = $stmt->rowCount();
             padding: 8px;
             text-align: left;
         }
-
         th {
             background-color: #f2f2f2;
         }
@@ -39,7 +38,6 @@ $num = $stmt->rowCount();
         .container {
             margin: 20px;
         }
-
         .btn {
             padding: 8px 12px;
             text-decoration: none;
@@ -47,7 +45,6 @@ $num = $stmt->rowCount();
             color: white;
             border-radius: 4px;
         }
-
         .btn-edit {
             background-color: #008CBA;
         }
