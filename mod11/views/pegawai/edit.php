@@ -1,0 +1,72 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Pegawai (MVC)</title>
+    <link rel="stylesheet" href="public/css/style.css">
+    <style>
+        .container {
+            margin: 20px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        form input[type="text"],
+        form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        form input[type="submit"] {
+            background-color: #008CBA;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #007bb5;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 12px;
+            background-color: #f44336;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Edit Data Pegawai</h1>
+        <form action="index.php?controller=pegawai&action=edit&id=<?php echo
+                                                                    htmlspecialchars($pegawai->id_pegawai); ?>" method="post">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" value="<?php echo
+                                                            htmlspecialchars($pegawai->nama); ?>" required>
+            <label for="alamat">Alamat:</label>
+            <textarea id="alamat" name="alamat" required><?php echo htmlspecialchars($pegawai->alamat); ?></textarea>
+            <input type="submit" value="Update">
+        </form>
+        <a href="index.php?controller=pegawai&action=index" class="btn-back">Kembali</a>
+    </div>
+</body>
+
+</html>
