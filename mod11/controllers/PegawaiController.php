@@ -44,13 +44,14 @@ window.location.href='index.php?controller=pegawai&action=create';</script>";
             $this->pegawai->nama = $_POST['nama'];
             $this->pegawai->alamat = $_POST['alamat'];
             if ($this->pegawai->update()) {
-                echo "<script>alert('Data pegawai berhasil diupdate!');
-window.location.href='index.php?controller=pegawai&action=index';</script>";
+                echo "<script>alert('Data pegawai berhasil diupdate!'); 
+                window.location.href='index.php?controller=pegawai&action=index';</script>";
             } else {
                 echo "<script>alert('Gagal mengupdate data pegawai.');
-window.location.href='index.php?controller=pegawai&action=edit&id=" . $id . "';</script>";
+                window.location.href='index.php?controller=pegawai&action=edit&id=" . $id . "';</script>";
             }
         } else {
+            $pegawai = $this->pegawai;
             // Load the view for the form
             include_once __DIR__ . '/../views/pegawai/edit.php';
         }

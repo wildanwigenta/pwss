@@ -52,17 +52,14 @@
         }
     </style>
 </head>
-
 <body>
     <div class="container">
         <h1>Edit Data Pegawai</h1>
-        <form action="index.php?controller=pegawai&action=edit&id=<?php echo
-                                                                    htmlspecialchars($pegawai->id_pegawai); ?>" method="post">
+        <form action="index.php?controller=pegawai&action=edit&id=<?php echo $pegawai->id_pegawai; ?>" method="post">
             <label for="nama">Nama:</label>
-            <input type="text" id="nama" name="nama" value="<?php echo
-                                                            htmlspecialchars($pegawai->nama); ?>" required>
+            <input type="text" id="nama" name="nama" value="<?php echo $pegawai->nama; ?>" required>
             <label for="alamat">Alamat:</label>
-            <textarea id="alamat" name="alamat" required><?php echo htmlspecialchars($pegawai->alamat); ?></textarea>
+            <textarea id="alamat" name="alamat" required><?php echo $pegawai->alamat; ?></textarea>
             <input type="submit" value="Update">
         </form>
         <a href="index.php?controller=pegawai&action=index" class="btn-back">Kembali</a>
