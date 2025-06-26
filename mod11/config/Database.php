@@ -2,7 +2,7 @@
 class Database
 {
     private $host = "localhost";
-    private $db_name = "simpeg";
+    private $db_name = "pwssdb";
     private $username = "root";
     private $password = "";
     public $conn;
