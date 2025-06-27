@@ -35,11 +35,9 @@
             color: white;
             border-radius: 4px;
         }
-
         .btn-edit {
             background-color: #008CBA;
         }
-
         .btn-delete {
             background-color: #f44336;
         }
