@@ -25,7 +25,6 @@
         th {
             background-color: #f2f2f2;
         }
-
         .container {
             margin: 20px;
         }
