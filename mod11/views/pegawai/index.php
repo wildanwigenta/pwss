@@ -28,7 +28,6 @@
         .container {
             margin: 20px;
         }
-
         .btn {
             padding: 8px 12px;
             text-decoration: none;
