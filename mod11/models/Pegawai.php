@@ -8,7 +8,13 @@ class Pegawai {
  public function __construct($db) {
  $this->conn = $db;
  }
-
+ // Method untuk membaca semua data pegawai
+ public function read() {
+ $query = "SELECT id_pegawai, nama, alamat FROM " . $this->table_name . " ORDER BY id_pegawai DESC";
+ $stmt = $this->conn->prepare($query);
+ $stmt->execute();
+ return $stmt;
+ }
  // Method untuk membuat data pegawai baru
  public function create() {
  $query = "INSERT INTO " . $this->table_name . " SET nama=:nama, alamat=:alamat";
