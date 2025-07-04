@@ -6,7 +6,7 @@
 </head>
 <body>
     <h1>Halaman Tentang</h1>
-    <p>Website ini dibuat kelompok G untuk tugas kuliah.</p>
+    <p>Website ini dibuat oleh kelompok G untuk tugas pwss.</p>
     <a href="index.php">Beranda</a> | <a href="contact.php">Kontak</a>
 </body>
 </html>
