@@ -57,8 +57,6 @@
             echo "<th>Alamat</th>";
             echo "<th>Aksi</th>";
             echo "</tr>";
-            echo "</thead>";
-            echo "<tbody>";
             while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                 extract($row);
                 echo "<tr>";
