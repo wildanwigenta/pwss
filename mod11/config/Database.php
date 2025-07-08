@@ -1,11 +1,7 @@
 <?php
 class Database
 {
-    private $host = "localhost";
-    private $db_name = "pwssdb";
-    private $username = "root";
-    private $password = "";
-    public $conn;
+    
     public function getConnection()
     {
         $this->conn = null;
