@@ -72,7 +72,6 @@
                 echo "</tr>";
             }
             echo "</tbody>";
-            echo "</table>";
         } else {
             echo "<p>Belum ada data pegawai.</p>";
         }
