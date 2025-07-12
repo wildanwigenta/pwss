@@ -25,7 +25,7 @@ class PegawaiController
             $this->pegawai->alamat = $_POST['alamat'];
             if ($this->pegawai->create()) {
                 echo "<script>alert('Data pegawai berhasil ditambahkan!');
-window.location.href='index.php?controller=pegawai&action=index';</script>";
+                    window.location.href='index.php?controller=pegawai&action=index';</script>";
             } else {
                 echo "<script>alert('Gagal menambahkan data pegawai.');
 window.location.href='index.php?controller=pegawai&action=create';</script>";
