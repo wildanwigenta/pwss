@@ -4,7 +4,6 @@ class Kalkulator {
         return $a + $b;
     }
 }
-
 $kalkulator = new Kalkulator();
 echo $kalkulator->tambah(5, 3);
 ?>
