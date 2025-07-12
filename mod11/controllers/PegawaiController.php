@@ -28,7 +28,7 @@ class PegawaiController
                     window.location.href='index.php?controller=pegawai&action=index';</script>";
             } else {
                 echo "<script>alert('Gagal menambahkan data pegawai.');
-window.location.href='index.php?controller=pegawai&action=create';</script>";
+                    window.location.href='index.php?controller=pegawai&action=create';</script>";
             }
         } else {
             // Load the view for the form
