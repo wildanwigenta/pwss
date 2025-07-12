@@ -65,7 +65,7 @@ class PegawaiController
                 window.location.href='index.php?controller=pegawai&action=index';</script>";
         } else {
             echo "<script>alert('Gagal menghapus data pegawai.');
-window.location.href='index.php?controller=pegawai&action=index';</script>";
+                window.location.href='index.php?controller=pegawai&action=index';</script>";
         }
     }
 }
