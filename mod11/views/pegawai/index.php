@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,22 +12,27 @@
             border-collapse: collapse;
             margin-top: 20px;
         }
+
         table,
         th,
         td {
             border: 1px solid black;
         }
+
         th,
         td {
             padding: 8px;
             text-align: left;
         }
+
         th {
             background-color: #f2f2f2;
         }
+
         .container {
             margin: 20px;
         }
+
         .btn {
             padding: 8px 12px;
             text-decoration: none;
@@ -34,14 +40,17 @@
             color: white;
             border-radius: 4px;
         }
+
         .btn-edit {
             background-color: #008CBA;
         }
+
         .btn-delete {
             background-color: #f44336;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>Data Pegawai</h1>
@@ -79,4 +88,5 @@
         ?>
     </div>
 </body>
+
 </html>
